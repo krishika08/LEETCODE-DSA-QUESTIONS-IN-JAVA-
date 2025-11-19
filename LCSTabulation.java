@@ -67,6 +67,22 @@ public class LCSTabulation {
             }
         }
 
+
+        // --------------------------------- NEW ADDED FOR TABLE ( NOT IMPORTANT) ------------------------
+             System.out.println("DP TABLE IS :");
+             // for all ROWS
+             for(int i = 0 ; i < dp.length ; i++){
+                // for all COLUMNS 
+                for(int j =0 ; j<dp[0].length ; j++){
+                    // a new line after every row 
+               System.out.print(dp[i][j] +" ");
+                }
+                System.out.println();
+             }
+              System.out.println();
+             
+// -------------------------------- ENDS --------------------------------------------------
+        
         // Returns the final answer located at the bottom-right corner
         return dp[n][m];
     }
@@ -82,4 +98,5 @@ public class LCSTabulation {
         // Call the function and print the returned value
         System.out.println(LCSTabulation(str1, str2));
     }
+
 }
